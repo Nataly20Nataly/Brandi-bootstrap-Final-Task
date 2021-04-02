@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Pacifico&display=swap');
+body {
+  padding-top: 20px;
+  &:before {
+    z-index: 10001;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: limegreen;
+    content: "Xsmall";
+  }
+  @include media-breakpoint-up(sm) {
+    &:before {
+      content: "small";
+      background: #f00;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;
+    &:before {
+      content: "middle";
+      background: green;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &:before {
+      content: "Large";
+      background: turquoise;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    &:before {
+      content: "XLarge";
+      background: #f09;
+    }
+  }
+  @include media-breakpoint-up(xxl) {
+    &:before {
+      content: "XXLarge";
+      background: #90f;
+    }
+  }
+}
+body{
+    background: $WhiteColor;
+}
+header{
+  position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.navbar{
+    position: relative;
+        height: 70px;
+    p{
+        color: $StormGray;
+        font-size: 13px;
+        word-spacing: 2.5px;
+        padding-left: 67px;
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 0;
+        &::before{
+          content: '';
+          height: 17px;
+          width: 1px;
+          top: 1px;
+          background: $Blumine;
+          position: absolute;
+          left: 45px;
+        }
+    }
+}
+.navbar li{
+  padding-right: 0;
+&:not(:last-child){
+  @include media-breakpoint-up(lg){
+    padding-right: 37.5px;
+}
+}
+a{
+  font-size: 18px;
+  @include media-breakpoint-up(lg){
+      font-size: $nav-link-font-size;
+    }
+}
+}
+    .navbar a{
+        border-top: 2px solid transparent;
+    &:hover{
+border-top: 2px solid #32b0ee;
+    }
+}
+.navbar-brand{
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 0.3px;
+  height: 70px;
+}
+.gallery{
+  width: 100%;
+  height: 100vh;
+  min-height: 630px;
+  position: relative;
+}
+.navbar{
+button{
+  width: 35px;
+  height: 35px;
+  border-color: $SpringGreen !important;
+  position: relative;
+  &:focus{
+  outline: none;
+  box-shadow:none;
+}
+  span{
+height: 2px;
+background: $WhiteColor;
+position: absolute;
+&:first-child{
+  top: 8px;
+width: 26px;
+right: 3px;
+}
+&:nth-child(2){
+  top: 15px;
+width: 18px;
+right: 7px;
+}
+&:last-child{
+  top: 22px;
+  width: 9px;
+right: 11px;
+}
+  }
+}
+}
+.navbar-collapse{
+  background: $Haiti;
+   @include media-breakpoint-up(lg){
+    background: none;
+}
+}
+.carousel-indicators{
+justify-content: flex-end;
+margin-right: 10px;
+bottom: 50%;
+.displays{
+  transform: rotate(90deg);
+  display: none;
+  @include media-breakpoint-up(md){
+    display: block;
+  }
+  .active{
+background: $WhiteColor;
+opacity: 1;
+}
+}
+}
+.carousel-indicators [type="button"]{
+  border-radius: 50%;
+  transition: all 3s;
+  margin-left: 10px;
+  background: transparent;
+  border: .5px solid $WhiteColor;
+  opacity: .2;
+.active:active{
+  background: $WhiteColor;
+}
+}
+.carousel-item{
+  transition: all 3s step-start;
+  strong{
+font-weight: 600;
+}
+p{
+font-size: 48px;
+}
+small{
+  color: $SpringGreen;
+}
+span{
+  font-size: 18px;
+  position: relative;
+  &:before{
+    content: '';
+    height: 1px;
+    width: 28px;
+    left: -61px;
+    top: 14px;
+    background: $SpringGreen;
+    position: absolute;
+  }
+  &::after{
+    content: '';
+    height: 1px;
+    width: 28px;
+    right: -61px;
+    top: 12px;
+    background: $SpringGreen;
+    position: absolute;
+  }
+}
+}
+.carousel-caption{
+animation: fadeIn ease 5s;
+}
+.item-margin{
+margin-top: 77px;
+margin-bottom: 25px;
+}
+.block1{
+  height: 811px;
+}
+.features{
+@extend .item-margin;
+h3{
+  font-weight: 800;
+  color: $Niagara;
+}
+}
+.social-media{
+  @include list-unstyled;
+  display: flex;
+  justify-content: center;
+  margin-top: -73px;
+  a{
+ text-decoration: none;
+  }
+  .ico{
+color: $CuttySark;
+padding-left: 11px;
+opacity: .6;
+font-size: 19px;
+&:hover{
+  color: $WhiteColor;
+  opacity: .9;
+}
+  }
+}
+.text{
+  color: $BlackPearl;
+ h3{
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 27px;
+}
+p{
+  font-weight: 400;
+  font-size: 13px;
+}
+}
