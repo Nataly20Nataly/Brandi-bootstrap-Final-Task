@@ -349,9 +349,33 @@ p{
   font-size: 18px;
   text-align: center;
   line-height: 24px;
+  padding-bottom: 38px;
+}
+.buttons{
+  padding-bottom: 38px;
+.btn{
+  border-color: transparent;
+  color: $Haiti;
+  font-weight: 600;
+  font: 600 'Open-Sans' sans-serif;
+  &.active,
+  &:hover{
+    background-color: $Niagara;
+    color: $WhiteColor;
+    outline: none;
+    box-shadow: none;
+  }
+}
 }
 .portfolio {
   img{
     width: 100%;
   }
+    &:hover{
+      background: $SpringGreen;
+      
+    }
+  }
+button{
+  padding-left: 20px;
 }
