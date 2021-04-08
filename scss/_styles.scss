@@ -50,6 +50,9 @@ body {
 body {
   background: $WhiteColor;
 }
+main{
+min-height: 800px;
+}
 header {
   position: absolute;
   width: 100%;
@@ -188,8 +191,8 @@ header {
       content: "";
       height: 1px;
       width: 28px;
-      left: -58px;
-      top: 13px;
+      left: -61px;
+      top: 15px;
       background: $SpringGreen;
       position: absolute;
     }
@@ -197,8 +200,8 @@ header {
       content: "";
       height: 1px;
       width: 28px;
-      right: -63px;
-      top: 13px;
+      right: -61px;
+      top: 15px;
       background: $SpringGreen;
       position: absolute;
     }
@@ -206,17 +209,28 @@ header {
 }
 .carousel-caption {
   animation: fadeIn ease 5s;
+  h2{
+    @include media-breakpoint-up(sm) {
+    margin-bottom: 5px;
+  }
+}
   strong {
     font-weight: 600;
   }
   p {
-    font-size: 48px;
     letter-spacing: 1px;
+font-size: 37px;
+line-height: 45px;
+padding-bottom: 8px;
+    @include media-breakpoint-up(sm) {
+      font-size: 48px;
     margin-left: 21px;
-  }
+    padding-bottom: 32px
+    }
   small {
     color: $SpringGreen;
   }
+}
 }
 .title {
   position: relative;
@@ -251,14 +265,14 @@ header {
   display: flex;
   justify-content: center;
   margin-top: -70px;
-  a {
-    text-decoration: none;
-  }
   .ico {
     color: $CuttySark;
     padding-left: 11px;
     opacity: 0.6;
+    font-size: 25px;
+    @include media-breakpoint-up(sm){
     font-size: 19px;
+    }
     &:hover {
       color: $WhiteColor;
       opacity: 0.9;
@@ -269,16 +283,19 @@ header {
   display: flex;
 }
 .block1 {
-  margin-bottom: 168px;
-  background: $AquaHaze;
-}
-.block1 {
-  margin-bottom: 72px;
+  margin-bottom: 10px;
+    background: $AquaHaze;
+  @include media-breakpoint-up(lg){
+margin-bottom: 72px;
+  }
 }
 .text {
   padding-left: 16px;
   color: $BlackPearl;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
+  @include media-breakpoint-up(lg){
+  padding-bottom: 86px;
+  }
   h3 {
     font-weight: 600;
     font-size: 20px;
@@ -290,6 +307,13 @@ header {
     line-height: 21px;
   }
 }
+.info-works{
+  color: $ShuttleGray;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 48px;
+  }
 .features {
   width: 40px;
   height: 40px;
@@ -353,22 +377,26 @@ header {
   }
 }
 .t-2 {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
-.info p {
+.info-team{
   color: $ShuttleGray;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 96px;
-}
+  padding-bottom: 106px;
+  }
 .buttons {
   padding-bottom: 38px;
   .btn {
     border-color: transparent;
     color: $Haiti;
-    font-weight: 600;
-    font: 600 "Open-Sans" sans-serif;
+    font-weight: 700;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md){
+margin-bottom: 0;
+    }
     &.active,
     &:hover {
       background-color: $Niagara;
@@ -432,7 +460,6 @@ header {
     height: 100%;
   }
 }
-
 .t-3 {
   letter-spacing: -1px;
   word-spacing: -1px;
@@ -450,12 +477,13 @@ header {
   }
 }
 .phototeam {
-  position: relative;
   .account1.active,
    &:hover .nameteam{
     color: $MountainMeadow;
   }
   .photo{
+      position: relative;
+      padding-bottom: 35px;
   img{
   &:first-child {
     filter: grayscale(100%);
@@ -478,7 +506,7 @@ header {
   }
   p{
     font-weight: 400;
-    padding-bottom: 71px;
+    padding: 0 16px 55px 16px;
   }
   .link{
     display: inline-flex;
@@ -491,25 +519,36 @@ header {
     display: flex;
         justify-content: center;
         align-items: center;
-  }
+        margin-right: 4px;
   .twitter {
-    margin-right: 4px;
     &::after {
  content: "";
           background: url(../images/sprite/sprite.svg#twitter) no-repeat;
           width: 20px;
           height: 21px;
-          filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(97deg) brightness(108%) contrast(100%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg)
+            brightness(110%) contrast(101%);
     }
     }
     .facebook{
-    margin-right: 4px;
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url(../images/sprite/sprite.svg#facebook);
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg)
+            brightness(110%) contrast(101%);
+    }
+    }
+  }
+  .googleplus{
     &::after {
       content: "";
       width: 20px;
       height: 20px;
       background: url(../images/sprite/sprite.svg#google+);
-      filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(97deg) brightness(108%) contrast(100%);
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg)
+            brightness(110%) contrast(101%);
     }
     }
   }
@@ -539,12 +578,54 @@ header {
   padding-bottom: 30px;
 }
 .block3{
-  padding-bottom: 220px;
+  padding-bottom: 177px;
 }
 .block4{
   padding-bottom: 100px;
 }
 .banner{
-  background: url(../images/facts-bg.jpg);
+  background: url(../images/facts-bg.jpg) no-repeat 0 50%;
   height: 600px;
+  background-size: cover;
+  padding-top: 22px;
+}
+.t-4{
+  margin-bottom: 25px;
+&:after {
+    content: "";
+    left: 172px;
+  }
+  &::before {
+    content: "";
+    right: 172px;
+  }
+}
+.circle{
+  .icon-animation{
+    border-radius: 50%;
+    border: 2px solid $PaleSky;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    svg{
+      fill:$Pippin;
+    }
+  }
+  
+}
+  .data{
+    margin-top: 34px;
+  h4{
+    color: $WhiteColor;
+    font-weight: 600;
+    padding-bottom: 6px;
+  }
+  p{
+    color: $WhiteColor;
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
