@@ -247,7 +247,7 @@ padding-bottom: 8px;
     height: 1px;
     background: $Porcelain;
     position: absolute;
-    top: 59px;
+    top: 56px;
     right: 119px;
   }
   &::after {
@@ -256,7 +256,7 @@ padding-bottom: 8px;
     height: 1px;
     background: $Porcelain;
     position: absolute;
-    top: 59px;
+    top: 56px;
     left: 119px;
   }
 }
@@ -578,14 +578,16 @@ margin-bottom: 0;
   padding-bottom: 30px;
 }
 .block3{
+  padding-bottom: 80px;
+  @include media-breakpoint-up(lg){
   padding-bottom: 177px;
 }
+}
 .block4{
-  padding-bottom: 100px;
+  margin-bottom: 24px;
 }
 .banner{
   background: url(../images/facts-bg.jpg) no-repeat 0 50%;
-  height: 600px;
   background-size: cover;
   padding-top: 22px;
 }
@@ -593,15 +595,19 @@ margin-bottom: 0;
   margin-bottom: 25px;
 &:after {
     content: "";
-    left: 172px;
-  }
+          left: 223px;
+      }
   &::before {
     content: "";
-    right: 172px;
-  }
+          right: 223px;
+      }
 }
-.circle{
-  .icon-animation{
+.circles{
+  padding-bottom: 155px;
+  .circle{
+    padding-bottom: 30px;
+  }
+  .icon-facts{
     border-radius: 50%;
     border: 2px solid $PaleSky;
     width: 130px;
@@ -613,8 +619,118 @@ margin-bottom: 0;
     svg{
       fill:$Pippin;
     }
+  &.animation{
+    svg{
+      fill: transparent;
+      path.rocket{
+        stroke-dasharray: 200;
+        stroke-dashoffset: 240;
+      }
+      path.watch{
+        stroke-dasharray: 240;
+        stroke-dashoffset: 0;
+      }
+      path.trophy{
+        stroke-dasharray: 0;
+        stroke-dashoffset: 240;
+      }
+    }
+    &:hover{
+      path.watch{
+        stroke: $MountainMeadow;
+        animation: watch 3s infinite cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      path.people{
+        stroke: $MountainMeadow;
+        animation: people 3s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      }
+       path.rocket{
+        stroke: $MountainMeadow;
+        animation: rocket 2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      path.trophy{
+        stroke: $MountainMeadow;
+        animation: trophy 3s infinite cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      }
+    }
+}
+}
+@keyframes watch{
+  0% {
+        transform: rotate(0deg);
+        stroke-dashoffset: 0;
+    }
+    25%{
+stroke-dashoffset: 240;
+    }
+    75%{
+stroke-dashoffset: 480;
+fill: transparent;
+    }
+    100% {
+        transform: rotate(360deg);
+        fill: $Pippin;
+        stroke-dashoffset: 240;
+    }
+}
+@keyframes people{
+  0%{
+     stroke-dashoffset: 0;
+     opacity: 0;
   }
-  
+  50%{
+     stroke-dasharray: 10;
+     opacity: 1;
+     fill: transparent;
+  }
+  100%{
+    stroke-dasharray: 50;
+    fill: $Pippin;
+    opacity: 1;
+  }
+}
+@keyframes rocket{
+  0%{
+     stroke-dasharray: 0;
+     transform: rotate(100deg);
+  }
+  50%{
+     stroke-dasharray: 200;
+     transform: rotate(-80deg);
+  }
+  85%{
+     stroke-dasharray: 450;
+        fill: transparent;
+        transform: rotate(-150deg);
+  }
+  100%{
+    stroke-dasharray: 240;
+    fill: $Pippin;
+    transform: rotate(-200deg);
+  }
+}
+@keyframes trophy{
+   0%{
+     stroke-dasharray: 240;
+     opacity: .55;
+     transform: scaleY(0);
+  }
+  50%{
+     stroke-dasharray: 450;
+      fill: transparent;
+     transform: scaleY(1.1);
+  }
+  85%{
+     stroke-dasharray: 200;
+     transform: scaleY(0);
+  }
+  100%{
+    stroke-dasharray: 0;
+    fill: $Pippin;
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
   .data{
     margin-top: 34px;
