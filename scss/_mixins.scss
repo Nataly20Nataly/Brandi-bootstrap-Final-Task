@@ -1,0 +1,16 @@
+@mixin info($color, $fw, $fs, $lh) {
+      color: $color;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin input-txt($color, $mt, $p, $border) {
+  color: $color;
+  margin-top: $mt;
+  padding: $p;
+  border: $border;
+}
+@mixin columns($fs, $fw) {
+    font-size: $fs;
+     font-weight: $fw;
+}
