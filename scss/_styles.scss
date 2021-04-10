@@ -331,6 +331,7 @@ margin-bottom: 72px;
   margin-bottom: 28px;
 }
 .info-team{
+  padding-top: 18px;
  @include info($ShuttleGray, 600, 18px, 24px);
   padding-bottom: 70px;
    @include media-breakpoint-up(lg){
@@ -720,6 +721,7 @@ fill: transparent;
 .info-discuss{
     @include info($ShuttleGray, 600, 18px, 24px);
     margin-bottom: 63px;
+    padding-top: 15px;
     @include media-breakpoint-up(md){
       margin-bottom: 77px;
     }
