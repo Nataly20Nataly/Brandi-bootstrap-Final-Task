@@ -764,10 +764,13 @@ font-weight: 700;
 color: $BlackPearl;
 }
 .intel{
+  width: 100%;
+  @include media-breakpoint-up(md) {
   width: 50%;
   &:first-child{
   padding-right: 29px;
   }
+}
 input{
   @include input-txt($ShuttleGray, 41px, 0 30px 13px 0, none);
   font: 400 13px 'Open Sans', sans-serif;
@@ -1069,14 +1072,14 @@ margin-right: 12px;
            }
          }
          .heart-footer{
+          background: url(../images/sprite/sprite.svg#heart) no-repeat;
+          width: 18px;
+          height: 18px;
            display: inline-flex;
            margin
            : 0 6px -5px 6px;
-           &:after{
-             content: '';
              filter: invert(33%) sepia(96%) saturate(363%) hue-rotate(118deg) brightness(90%) contrast(91%);
            }
-         }
          a{
            color: $BlackPearl;
          }
