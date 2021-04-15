@@ -2,8 +2,8 @@
 body {
   background: $WhiteColor;
 }
-main{
-min-height: 800px;
+main {
+  min-height: 800px;
 }
 header {
   position: absolute;
@@ -162,35 +162,35 @@ header {
 }
 .carousel-caption {
   animation: fadeIn ease 5s;
-  h2{
+  h2 {
     @include media-breakpoint-up(sm) {
-    margin-bottom: 5px;
+      margin-bottom: 5px;
+    }
   }
-}
   strong {
     font-weight: 600;
   }
   p {
     letter-spacing: 1px;
-font-size: 37px;
-line-height: 45px;
-padding-bottom: 8px;
+    font-size: 37px;
+    line-height: 45px;
+    padding-bottom: 8px;
     @include media-breakpoint-up(sm) {
       font-size: 48px;
-    margin-left: 21px;
-    padding-bottom: 32px
+      margin-left: 21px;
+      padding-bottom: 32px;
     }
-  small {
-    color: $SpringGreen;
+    small {
+      color: $SpringGreen;
+    }
   }
-}
 }
 .title {
   position: relative;
   text-align: center;
   margin-bottom: 62px;
   margin-top: 47px;
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     margin-top: 72px;
   }
   h3 {
@@ -208,8 +208,8 @@ padding-bottom: 8px;
     padding-left: 11px;
     opacity: 0.6;
     font-size: 25px;
-    @include media-breakpoint-up(sm){
-    font-size: 19px;
+    @include media-breakpoint-up(sm) {
+      font-size: 19px;
     }
     &:hover {
       color: $WhiteColor;
@@ -222,17 +222,17 @@ padding-bottom: 8px;
 }
 .block1 {
   margin-bottom: 10px;
-    background: $AquaHaze;
-  @include media-breakpoint-up(lg){
-margin-bottom: 72px;
+  background: $AquaHaze;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 72px;
   }
 }
 .text {
   padding-left: 16px;
   color: $BlackPearl;
   padding-bottom: 50px;
-  @include media-breakpoint-up(lg){
-  padding-bottom: 86px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 86px;
   }
   h3 {
     font-weight: 600;
@@ -245,10 +245,10 @@ margin-bottom: 72px;
     line-height: 21px;
   }
 }
-.info-works{
+.info-works {
   @include info($ShuttleGray, 600, 18px, 24px);
   padding-bottom: 48px;
-  }
+}
 .features {
   width: 40px;
   height: 40px;
@@ -301,18 +301,18 @@ margin-bottom: 72px;
 .heart {
   margin: auto;
   margin-top: 25px;
-    background: url(../images/sprite/sprite.svg#heart) no-repeat;
-    width: 18px;
-    height: 18px;
-    filter: invert(87%) sepia(4%) saturate(118%) hue-rotate(149deg)
-      brightness(92%) contrast(88%);
-      &::before {
+  background: url(../images/sprite/sprite.svg#heart) no-repeat;
+  width: 18px;
+  height: 18px;
+  filter: invert(87%) sepia(4%) saturate(118%) hue-rotate(149deg)
+    brightness(92%) contrast(88%);
+  &::before {
     content: "";
     width: 90px;
     height: 1px;
     background: $Porcelain;
     position: absolute;
-    opacity: .1;
+    opacity: 0.1;
     top: 9px;
     right: 50px;
   }
@@ -320,24 +320,24 @@ margin-bottom: 72px;
     content: "";
     width: 90px;
     height: 1px;
-    opacity: .1;
+    opacity: 0.1;
     background: $Porcelain;
     position: absolute;
     top: 9px;
     left: 50px;
   }
-  }
+}
 .t-2 {
   margin-bottom: 28px;
 }
-.info-team{
+.info-team {
   padding-top: 18px;
- @include info($ShuttleGray, 600, 18px, 24px);
+  @include info($ShuttleGray, 600, 18px, 24px);
   padding-bottom: 70px;
-   @include media-breakpoint-up(lg){
-     padding-bottom: 106px;
-   }
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 106px;
   }
+}
 .buttons {
   padding-bottom: 38px;
   .btn {
@@ -346,8 +346,8 @@ margin-bottom: 72px;
     font-weight: 700;
     margin-right: 13px;
     margin-bottom: 10px;
-    @include media-breakpoint-up(md){
-margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
     }
     &:hover {
       background-color: $Niagara;
@@ -377,18 +377,18 @@ margin-bottom: 0;
         background: $MountainMeadow;
         border-radius: 50%;
         border: 1px solid $WhiteColor;
-        svg{
+        svg {
           fill: $WhiteColor;
         }
-        &.animation-eye{
-          svg{
+        &.animation-eye {
+          svg {
             fill: transparent;
-          path.eye{
-        fill: $WhiteColor;
+            path.eye {
+              fill: $WhiteColor;
+            }
+          }
+        }
       }
-    }
-        }
-        }
       h4 {
         color: $WhiteColor;
         font-size: 18px;
@@ -412,21 +412,21 @@ margin-bottom: 0;
     opacity: 0.9;
     width: 100%;
     height: 100%;
-    &:hover{
-      path.eye{
+    &:hover {
+      path.eye {
         stroke: $WhiteColor;
         animation: 1s eye cubic-bezier(0.95, 0.05, 0.795, 0.035) forwards;
       }
     }
     @keyframes eye {
-      0%{
-        opacity: .1;
+      0% {
+        opacity: 0.1;
         fill: transparent;
       }
-      50%{
-      opacity: .7;
+      50% {
+        opacity: 0.7;
       }
-      100%{
+      100% {
         opacity: 1;
         fill: $WhiteColor;
       }
@@ -437,96 +437,97 @@ margin-bottom: 0;
   letter-spacing: -1px;
   word-spacing: -1px;
   margin: 0;
-  h3{
-  font-size: 1.75rem;
+  h3 {
+    font-size: 1.75rem;
   }
 }
 .phototeam {
   .account1.active,
-   &:hover .nameteam{
+  &:hover .nameteam {
     color: $MountainMeadow;
   }
-  .photo{
-      position: relative;
-      padding-bottom: 35px;
-  img{
-  &:first-child {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
+  .photo {
+    position: relative;
+    padding-bottom: 35px;
+    img {
+      &:first-child {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+      }
+    }
   }
-  }
-}
-.overlay2 {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: $WhiteColor;
-  strong{
-    font-weight: 600;
+  .overlay2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $WhiteColor;
+    strong {
+      font-weight: 600;
       padding: 0 31px 7px 31px;
-  }
-  p{
-    font-weight: 400;
-    padding: 0 16px 67px 16px;
-  }
-  .link{
-    display: inline-flex;
+    }
+    p {
+      font-weight: 400;
+      padding: 0 16px 67px 16px;
+    }
+    .link {
+      display: inline-flex;
       margin-bottom: 0;
-  a {
-    width: 42px;
-    height: 42px;
-    background: $SurfieGreen;
-    opacity: .7;
-    display: flex;
+      a {
+        width: 42px;
+        height: 42px;
+        background: $SurfieGreen;
+        opacity: 0.7;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 4px;
-  &.twitter{
-    &::after {
-          content: "";
-          background: url(../images/sprite/sprite.svg#twitter-ico) no-repeat;
-          width: 20px;
-          height: 20px;
-          filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(204deg)
-            brightness(110%) contrast(101%);
-    }
-    }
-    &.facebook{
-    &::after{
-      content: "";
-      width: 20px;
-      height: 20px;
-      background: url(../images/sprite/sprite.svg#facebook);
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg)
-            brightness(110%) contrast(101%);
-    }
-    }
-  &.googleplus{
-    &::after{
-      content: "";
-      width: 20px;
-      height: 20px;
-      background: url(../images/sprite/sprite.svg#googleplus);
-      filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
-    }
+        &.twitter {
+          &::after {
+            content: "";
+            background: url(../images/sprite/sprite.svg#twitter-ico) no-repeat;
+            width: 20px;
+            height: 20px;
+            filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(204deg)
+              brightness(110%) contrast(101%);
+          }
+        }
+        &.facebook {
+          &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url(../images/sprite/sprite.svg#facebook);
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg)
+              brightness(110%) contrast(101%);
+          }
+        }
+        &.googleplus {
+          &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url(../images/sprite/sprite.svg#googleplus);
+            filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(201deg)
+              brightness(106%) contrast(106%);
+          }
+        }
+      }
     }
   }
-}
-}
-&:hover .overlay2 {
-  background: $MountainMeadow;
-  opacity: 0.95;
-  height: 300px;
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  &:hover .overlay2 {
+    background: $MountainMeadow;
+    opacity: 0.95;
+    height: 300px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .nameteam {
   color: $Haiti;
@@ -542,40 +543,40 @@ margin-bottom: 0;
 .bl-h-3 {
   padding-bottom: 30px;
 }
-.block3{
+.block3 {
   padding-bottom: 80px;
-  @include media-breakpoint-up(lg){
-  padding-bottom: 177px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 177px;
+  }
 }
-}
-.block4{
+.block4 {
   margin-bottom: 24px;
 }
-.banner{
+.banner {
   background: url(../images/facts-bg.jpg) no-repeat 0 50%;
   background-size: cover;
   padding-top: 22px;
 }
-.t-4{
+.t-4 {
   margin-bottom: 25px;
 }
-.h-4{
-&:after,
-&::before {
+.h-4 {
+  &:after,
+  &::before {
     content: "";
-    opacity: .5;
+    opacity: 0.5;
     background: $RegentGray;
-      }
-}
-.circles{
-  padding-bottom: 81px;
-  @include media-breakpoint-up(md){
-  padding-bottom: 155px;
   }
-  .circle{
+}
+.circles {
+  padding-bottom: 81px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 155px;
+  }
+  .circle {
     padding-bottom: 30px;
   }
-  .icon-facts{
+  .icon-facts {
     border-radius: 50%;
     border: 2px solid $PaleSky;
     width: 130px;
@@ -584,399 +585,410 @@ margin-bottom: 0;
     justify-content: center;
     align-items: center;
     margin: auto;
-    svg{
-      fill:$Pippin;
+    svg {
+      fill: $Pippin;
     }
-  &.animation{
-    svg{
-      fill: transparent;
-      path.rocket{
-        stroke-dasharray: 200;
-        stroke-dashoffset: 240;
+    &.animation {
+      svg {
+        fill: transparent;
+        path.rocket {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 240;
+        }
+        path.watch {
+          stroke-dasharray: 240;
+          stroke-dashoffset: 0;
+        }
+        path.trophy {
+          stroke-dasharray: 0;
+          stroke-dashoffset: 240;
+        }
       }
-      path.watch{
-        stroke-dasharray: 240;
-        stroke-dashoffset: 0;
-      }
-      path.trophy{
-        stroke-dasharray: 0;
-        stroke-dashoffset: 240;
+      &:hover {
+        path.watch {
+          stroke: $MountainMeadow;
+          animation: watch 3s infinite cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        path.people {
+          stroke: $MountainMeadow;
+          animation: people 3s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        }
+        path.rocket {
+          stroke: $MountainMeadow;
+          animation: rocket 2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        path.trophy {
+          stroke: $MountainMeadow;
+          animation: trophy 3s infinite cubic-bezier(0.77, 0, 0.175, 1);
+        }
       }
     }
-    &:hover{
-      path.watch{
-        stroke: $MountainMeadow;
-        animation: watch 3s infinite cubic-bezier(0.77, 0, 0.175, 1);
-      }
-      path.people{
-        stroke: $MountainMeadow;
-        animation: people 3s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      }
-       path.rocket{
-        stroke: $MountainMeadow;
-        animation: rocket 2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      }
-      path.trophy{
-        stroke: $MountainMeadow;
-        animation: trophy 3s infinite cubic-bezier(0.77, 0, 0.175, 1);
-      }
-      }
-    }
+  }
 }
-}
-@keyframes watch{
+@keyframes watch {
   0% {
-        transform: rotate(0deg);
-        stroke-dashoffset: 0;
-    }
-    25%{
-stroke-dashoffset: 240;
-    }
-    75%{
-stroke-dashoffset: 480;
-fill: transparent;
-    }
-    100% {
-        transform: rotate(360deg);
-        fill: $Pippin;
-        stroke-dashoffset: 240;
-    }
+    transform: rotate(0deg);
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke-dashoffset: 240;
+  }
+  75% {
+    stroke-dashoffset: 480;
+    fill: transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+    fill: $Pippin;
+    stroke-dashoffset: 240;
+  }
 }
-@keyframes people{
-  0%{
-     stroke-dashoffset: 0;
-     opacity: 0;
+@keyframes people {
+  0% {
+    stroke-dashoffset: 0;
+    opacity: 0;
   }
-  50%{
-     stroke-dasharray: 10;
-     opacity: 1;
-     fill: transparent;
+  50% {
+    stroke-dasharray: 10;
+    opacity: 1;
+    fill: transparent;
   }
-  100%{
+  100% {
     stroke-dasharray: 50;
     fill: $Pippin;
     opacity: 1;
   }
 }
-@keyframes rocket{
-  0%{
-     stroke-dasharray: 0;
-     transform: rotate(100deg);
+@keyframes rocket {
+  0% {
+    stroke-dasharray: 0;
+    transform: rotate(100deg);
   }
-  50%{
-     stroke-dasharray: 200;
-     transform: rotate(-80deg);
+  50% {
+    stroke-dasharray: 200;
+    transform: rotate(-80deg);
   }
-  85%{
-     stroke-dasharray: 450;
-        fill: transparent;
-        transform: rotate(-150deg);
+  85% {
+    stroke-dasharray: 450;
+    fill: transparent;
+    transform: rotate(-150deg);
   }
-  100%{
+  100% {
     stroke-dasharray: 240;
     fill: $Pippin;
     transform: rotate(-200deg);
   }
 }
-@keyframes trophy{
-   0%{
-     stroke-dasharray: 240;
-     opacity: .55;
-     transform: scaleY(0);
+@keyframes trophy {
+  0% {
+    stroke-dasharray: 240;
+    opacity: 0.55;
+    transform: scaleY(0);
   }
-  50%{
-     stroke-dasharray: 450;
-      fill: transparent;
-     transform: scaleY(1.1);
+  50% {
+    stroke-dasharray: 450;
+    fill: transparent;
+    transform: scaleY(1.1);
   }
-  85%{
-     stroke-dasharray: 200;
-     transform: scaleY(0);
+  85% {
+    stroke-dasharray: 200;
+    transform: scaleY(0);
   }
-  100%{
+  100% {
     stroke-dasharray: 0;
     fill: $Pippin;
     opacity: 1;
     transform: scaleY(1);
   }
 }
-  .data{
-    margin-top: 34px;
-  h4{
+.data {
+  margin-top: 34px;
+  h4 {
     color: $WhiteColor;
     font-weight: 600;
     padding-bottom: 6px;
   }
-  p{
+  p {
     color: $WhiteColor;
     font-size: 18px;
     font-weight: 400;
   }
 }
-.block5{
+.block5 {
   margin-bottom: 35px;
   @include media-breakpoint-up(lg) {
-     margin-bottom: 145px;
+    margin-bottom: 145px;
   }
-.info-discuss{
+  .info-discuss {
     @include info($ShuttleGray, 600, 18px, 24px);
     margin-bottom: 63px;
     padding-top: 15px;
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(md) {
       margin-bottom: 77px;
     }
-}
-.t-5{
-  margin-bottom: 0;
-}
-.contacts{
-  text-align: center;
-  @include media-breakpoint-up(md){
-    text-align: start;
   }
-  .phr{
-    margin-bottom: 33px;
- strong{
-    font-size: 22px;
-    color: $BlackPearl;
+  .t-5 {
+    margin-bottom: 0;
   }
-  }
-  span{
-    display: block;
-    color: $Nevada;
-    font-size: 13px;
-    margin-bottom: 4px;
-    a{
+  .contacts {
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: start;
+    }
+    .phr {
+      margin-bottom: 33px;
+      strong {
+        font-size: 22px;
+        color: $BlackPearl;
+      }
+    }
+    span {
+      display: block;
       color: $Nevada;
-    }
-    }
-  }
-.form{
-  margin: 40px 0 25px 0;
-  @include media-breakpoint-up(md) {
-    margin: 0;
-  }
-  strong{
-word-spacing: -1px;
-letter-spacing: 0px;
-font-size: 24px;
-font-weight: 700;
-color: $BlackPearl;
-}
-.intel{
-  width: 100%;
-  @include media-breakpoint-up(md) {
-  width: 50%;
-  &:first-child{
-  padding-right: 29px;
-  }
-}
-input{
-  @include input-txt($ShuttleGray, 41px, 0 30px 13px 0, none);
-  font: 400 13px 'Open Sans', sans-serif;
-border-bottom: 1px solid $Silver;
- transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
- width: 100%;
-  &:focus{
-    outline: 0;
-    border-bottom-color: $MountainMeadow;
-  }
-}
-}
-}
-.t-5{
-&:after {
-    content: "";
-          left: 223px;
+      font-size: 13px;
+      margin-bottom: 4px;
+      a {
+        color: $Nevada;
       }
-  &::before {
-    content: "";
-          right: 223px;
-      }
-}
-.txt{
-  width: 100%;
-textarea{
-  width: 100%;
-  @include input-txt($ShuttleGray, 41px, 0 30px 3px 0, none);
-  resize: none;
-  font: 400 13px 'Open Sans', sans-serif;
-  border-bottom: 1px solid $Silver;
-  transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  margin-bottom: 32px;
-&:focus {
-    outline: 0;
-    border-bottom-color: $MountainMeadow;
+    }
   }
-}
-}
-ul.media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  @include media-breakpoint-up(md){
+  .form {
+    margin: 40px 0 25px 0;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+    strong {
+      word-spacing: -1px;
+      letter-spacing: 0px;
+      font-size: 24px;
+      font-weight: 700;
+      color: $BlackPearl;
+    }
+    .intel {
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        width: 50%;
+        &:first-child {
+          padding-right: 29px;
+        }
+      }
+      input {
+        @include input-txt($ShuttleGray, 41px, 0 30px 13px 0, none);
+        font: 400 13px "Open Sans", sans-serif;
+        border-bottom: 1px solid $Silver;
+        transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        width: 100%;
+        &:focus {
+          outline: 0;
+          border-bottom-color: $MountainMeadow;
+        }
+      }
+    }
+  }
+  .t-5 {
+    &:after {
+      content: "";
+      left: 223px;
+    }
+    &::before {
+      content: "";
+      right: 223px;
+    }
+  }
+  .txt {
+    width: 100%;
+    textarea {
+      width: 100%;
+      @include input-txt($ShuttleGray, 41px, 0 30px 3px 0, none);
+      resize: none;
+      font: 400 13px "Open Sans", sans-serif;
+      border-bottom: 1px solid $Silver;
+      transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      margin-bottom: 32px;
+      &:focus {
+        outline: 0;
+        border-bottom-color: $MountainMeadow;
+      }
+    }
+  }
+  ul.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @include media-breakpoint-up(md) {
+      flex-direction: column;
+    }
+  }
+  li {
+    margin: 0 20px 0 0;
+    @include media-breakpoint-up(md) {
+      margin: 20px 0 0 0;
+    }
+  }
+  a {
+    display: flex;
     flex-direction: column;
+    &.behance {
+      &::after {
+        content: "";
+        background: url(../images/sprite/sprite.svg#behance) no-repeat;
+        filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg)
+          brightness(103%) contrast(100%);
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+                   filter: invert(36%) sepia(386%) saturate(685%) hue-rotate(
+339deg
+) brightness(68%) contrast(580%);
+      }
+    }
+    &.twitter {
+      &::after {
+        content: "";
+        background: url(../images/sprite/sprite.svg#twitter) no-repeat;
+        filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg)
+          brightness(103%) contrast(100%);
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+                filter: invert(24%) sepia(300%) saturate(719%) hue-rotate(
+553deg
+) brightness(94%) contrast(733%);
+      }
+    }
+    &.dribbble {
+      &::after {
+        content: "";
+        background: url(../images/sprite/sprite.svg#dribbble) no-repeat;
+        filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg)
+          brightness(103%) contrast(100%);
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+        filter: invert(15%) sepia(156%) saturate(3310%) hue-rotate(21deg) brightness(96%) contrast(97%);
+      }
+    }
+    &.forrst {
+      &::after {
+        content: "";
+        background: url(../images/sprite/sprite.svg#forrst) no-repeat;
+        filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg)
+          brightness(103%) contrast(100%);
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+         filter: invert(312%) sepia(408%) saturate(2192%) hue-rotate(38deg) brightness(70%) contrast(568%)
+      }
+    }
+    &.googleplus {
+      &::after {
+        content: "";
+        background: url(../images/sprite/sprite.svg#google-plus) no-repeat;
+        filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg)
+          brightness(103%) contrast(100%);
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+            filter: invert(21%) sepia(253%) saturate(4992%) hue-rotate(
+706deg
+) brightness(81%) contrast(592%);
+      }
+    }
   }
-}
-li{
-  margin: 0 20px 0 0;
-   @include media-breakpoint-up(md){
-  margin: 20px 0 0 0;
-}
-}
-a{
-  display: flex;
-  flex-direction: column;
-  &.behance{
-  &::after{
-    content: '';
-    background: url(../images/sprite/sprite.svg#behance) no-repeat;
-    filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg) brightness(103%) contrast(100%);
-    width: 24px;
-    height: 24px;
-  }
-  &:hover{
-      filter: invert(1000%) sepia(1000%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
-  }
-  }
-&.twitter{
-  &::after{
-    content: '';
-    background: url(../images/sprite/sprite.svg#twitter) no-repeat;
-    filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg) brightness(103%) contrast(100%);
-    width: 24px;
-    height: 24px;
-  }
-  &:hover{
-      filter: invert(1000%) sepia(1000%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
-  }
-}
-  &.dribbble{
-  &::after{
-    content: '';
-    background: url(../images/sprite/sprite.svg#dribbble) no-repeat;
-    filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg) brightness(103%) contrast(100%);
-    width: 24px;
-    height: 24px;
-  }
-    &:hover{
-      filter: invert(1000%) sepia(1000%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
-  }
-}
- &.forrst{
-  &::after{
-    content: '';
-    background: url(../images/sprite/sprite.svg#forrst) no-repeat;
-    filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg) brightness(103%) contrast(100%);
-    width: 24px;
-    height: 24px;
-  }
-  &:hover{
-      filter: invert(1000%) sepia(1000%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
-  }
-}
-&.googleplus { 
-  &::after {
-    content: '';
-    background: url(../images/sprite/sprite.svg#google-plus) no-repeat;
-    filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg) brightness(103%) contrast(100%);
-    width: 24px;
-    height: 24px;
-  }
-  &:hover{
-      filter: invert(1000%) sepia(1000%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
-  }
-}
-}
 }
 .btn-submit {
   padding: 0;
   color: $Black;
-  font: 400 16px 'Open Sans', sans-serif;
+  font: 400 16px "Open Sans", sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  &:hover{
+  &:hover {
     color: $MountainMeadow;
   }
-  svg{
-fill: $MountainMeadow;
-margin-right: 12px;
+  svg {
+    fill: $MountainMeadow;
+    margin-right: 12px;
   }
-  &.animation-mail{
- svg{
-   fill: $MountainMeadow;
- }
-  path.cls-1{
- stroke-dasharray: 120;
-        stroke-dashoffset: 150;
-  }
-  &:hover{
-    path.cls-1{
-    stroke: $MountainMeadow;
-    animation: mail 2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  &.animation-mail {
+    svg {
+      fill: $MountainMeadow;
     }
- }
+    path.cls-1 {
+      stroke-dasharray: 120;
+      stroke-dashoffset: 150;
+    }
+    &:hover {
+      path.cls-1 {
+        stroke: $MountainMeadow;
+        animation: mail 2s cubic-bezier(0.39, 0.575, 0.565, 1);
+      }
+    }
   }
-  }
-  @keyframes mail{
-    0%{
+}
+@keyframes mail {
+  0% {
     stroke-dashoffset: 240;
     opacity: 0.5;
-    }
-    25%{
+  }
+  25% {
     stroke-dashoffset: 180;
     fill: transparent;
-    }
-    75%{
+  }
+  75% {
     stroke-dashoffset: 50;
-    opacity: .75;
-    }
-    100%{
+    opacity: 0.75;
+  }
+  100% {
     stroke-dashoffset: 0;
     fill: $MountainMeadow;
     opacity: 1;
-    }
   }
-  .map{
-    border-bottom: 5px solid $BlackPearl;
-  }
-  footer{
-    height: auto;
-    background: $MountainMeadow;
-        color: $WhiteColor;
-        background-size: cover;
-    .main-footer{
-      justify-content: space-between;
-        margin-top: 50px;
-    @include media-breakpoint-up(lg){
+}
+.map {
+  border-bottom: 5px solid $BlackPearl;
+}
+footer {
+  height: auto;
+  background: $MountainMeadow;
+  color: $WhiteColor;
+  background-size: cover;
+  .main-footer {
+    justify-content: space-between;
+    margin-top: 50px;
+    @include media-breakpoint-up(lg) {
       margin-top: 0;
-    height: 404px;
-    align-items: center;
-    justify-content: center;
-  }
-      .column1{
-      strong{
+      height: 404px;
+      align-items: center;
+      justify-content: center;
+    }
+    .column1 {
+      strong {
         font-size: 28px;
         font-family: "Pacifico", cursive;
         letter-spacing: 1px;
       }
-      p{
+      p {
         font-size: 13px;
         line-height: 23px;
         margin: 29px 0 55px 0;
       }
     }
-    .column2{
+    .column2 {
       margin-bottom: 49px;
-           @include media-breakpoint-up(md){
-          margin-bottom: 14px;
-           }
-      strong{
-         @include columns(14px, 600);
+      @include media-breakpoint-up(md) {
+        margin-bottom: 14px;
       }
-      .sub{
+      strong {
+        @include columns(14px, 600);
+      }
+      .sub {
         display: block;
         max-width: 290px;
         position: relative;
@@ -988,105 +1000,106 @@ margin-right: 12px;
         border: 2px solid $WhiteColor;
         margin: 40px 0 17px 0;
         border-radius: 2px;
-        &:focus{
+        &:focus {
           outline: none;
           border: 2px solid $BlackPearl;
         }
       }
-      .search{
-       left: 170px;
-       background: transparent;
-       bottom: 42px;
-       padding-left: 20px;
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       border: none;
-       position: relative;
-       &:focus{
-         outline: none;
-       }
-           &::before{
-             content: '';
+      .search {
+        left: 170px;
+        background: transparent;
+        bottom: 42px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: none;
+        position: relative;
+        &:focus {
+          outline: none;
+        }
+        &::before {
+          content: "";
           width: 18px;
           height: 16px;
           background: url(../images/sprite/sprite.svg#search-arrow);
-         filter: invert(91%) sepia(15%) saturate(451%) hue-rotate(115deg) brightness(96%) contrast(85%);
+          filter: invert(91%) sepia(15%) saturate(451%) hue-rotate(115deg)
+            brightness(96%) contrast(85%);
           position: absolute;
-           }
-            &:hover{
-            filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg) brightness(103%) contrast(100%);
-          }
         }
-        p{
-          font-size: 13px;
+        &:hover {
+          filter: invert(0%) sepia(99%) saturate(4%) hue-rotate(176deg)
+            brightness(103%) contrast(100%);
+        }
+      }
+      p {
+        font-size: 13px;
         line-height: 23px;
-        }
-       }
-       .column3{
-         strong{
-           @include columns(14px, 600);
-         }
-         ul{
-           columns: 2;
-           margin: 31px 0 6px 0;
-         }
-         li{
-           padding-bottom: 8px;
-         }
-         a{
-           color: $WhiteColor;
-           font-weight: 400;
-           font-size: 13px;
-
-         }
-       }
-       .column4{
-         font-size: 13px;
-         margin: 31px 0 20px 0;
-         @include media-breakpoint-up(lg){
-        margin: 39px 0 0 0;
-         }
-         position: relative;
-         &::after{
-           content: '';
-           width: 12px;
-             top: 12px;
-           left: -13px;
-           background: $Genoa;
-           height: 1px;
-           position: absolute;
-           transform: rotate(90deg);
-           @include media-breakpoint-up(md){
-             top: 25px;
-           left: -32px;
-           width: 36px;
-           }
-          }
-         p{
-           font-weight: 400;
-           margin-bottom: 34px;
-           line-height: 24px;
-           @include media-breakpoint-up(lg){
-             margin-bottom: 51px;
-           }
-         }
-         .heart-footer{
-          background: url(../images/sprite/sprite.svg#heart) no-repeat;
-          width: 18px;
-          height: 18px;
-           display: inline-flex;
-           margin
-           : 0 6px -5px 6px;
-             filter: invert(33%) sepia(96%) saturate(363%) hue-rotate(118deg) brightness(90%) contrast(91%);
-           }
-         a{
-           color: $BlackPearl;
-         }
-         span{
-           color: $BlackPearl;
-           font-weight: 600;
-         }
-       }
       }
     }
+    .column3 {
+      strong {
+        @include columns(14px, 600);
+      }
+      ul {
+        columns: 2;
+        margin: 31px 0 6px 0;
+      }
+      li {
+        padding-bottom: 8px;
+      }
+      a {
+        color: $WhiteColor;
+        font-weight: 400;
+        font-size: 13px;
+      }
+    }
+    .column4 {
+      font-size: 13px;
+      margin: 31px 0 20px 0;
+      @include media-breakpoint-up(lg) {
+        margin: 39px 0 0 0;
+      }
+      position: relative;
+      &::after {
+        content: "";
+        width: 12px;
+        top: 12px;
+        left: -13px;
+        background: $Genoa;
+        height: 1px;
+        position: absolute;
+        transform: rotate(90deg);
+        @include media-breakpoint-up(md) {
+          top: 25px;
+          left: -32px;
+          width: 36px;
+        }
+      }
+      p {
+        font-weight: 400;
+        margin-bottom: 34px;
+        line-height: 24px;
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 51px;
+        }
+      }
+      .heart-footer {
+        background: url(../images/sprite/sprite.svg#heart) no-repeat;
+        width: 18px;
+        height: 18px;
+        display: inline-flex;
+        margin: 0 6px -5px 6px;
+        filter: invert(33%) sepia(96%) saturate(363%) hue-rotate(118deg)
+          brightness(90%) contrast(91%);
+      }
+      a {
+        color: $BlackPearl;
+      }
+      span {
+        color: $BlackPearl;
+        font-weight: 600;
+      }
+    }
+  }
+}
